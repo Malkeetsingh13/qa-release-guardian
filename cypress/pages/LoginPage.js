@@ -1,6 +1,6 @@
 class LoginPage {
   visit() {
-    cy.visit('https://example.cypress.io')
+    cy.visit('/')
   }
 
   getPageTitle() {

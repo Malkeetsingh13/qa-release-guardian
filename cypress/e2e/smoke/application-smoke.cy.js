@@ -6,8 +6,7 @@ describe('Application Smoke Tests', () => {
   it('Verify that the application loads successfully', () => {
     loginPage.visit()
 
-    loginPage
-      .getPageTitle()
-      .should('contain.text', 'Kitchen Sink')
+    cy.verifyPageTitle('Kitchen Sink')
   })
 })
+

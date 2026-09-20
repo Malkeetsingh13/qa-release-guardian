@@ -1,0 +1,6 @@
+{
+  "application": {
+    "name": "QA Release Guardian",
+    "environment": "QA"
+  }
+}
