@@ -27,3 +27,12 @@
 Cypress.Commands.add('verifyPageTitle', (expectedTitle) => {
   cy.get('h1').should('contain.text', expectedTitle)
 })
+
+Cypress.Commands.add('apiRequest', (method, endpoint, body = undefined) => {
+  return cy.request({
+    method,
+    url: endpoint,
+    body,
+    failOnStatusCode: false
+  })
+})
