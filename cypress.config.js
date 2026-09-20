@@ -5,6 +5,8 @@ module.exports = defineConfig({
     apiUrl: 'https://jsonplaceholder.typicode.com'
   },
 
+  video: true,
+
   e2e: {
     baseUrl: 'https://example.cypress.io',
 
