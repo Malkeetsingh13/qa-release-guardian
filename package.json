@@ -9,6 +9,7 @@
   "test:regression": "cypress run --spec \"cypress/e2e/regression/**/*.cy.js\"",
   "test:api": "cypress run --spec \"cypress/e2e/api/**/*.cy.js\"",
   "release:check": "npm run test:smoke && npm run test:api && npm run test:regression",
+  "release:gate": "node scripts/release-gate.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
